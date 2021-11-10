@@ -1,0 +1,227 @@
+a, a:visited,a:hover{
+    text-decoration: none;color:black;
+    font-weight: 200;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;500;700&display=swap');
+h1,h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+p{
+    font-family: Roboto;
+    font-weight: 400;
+}
+body{
+    margin: 0 10px;
+}
+.wrapper{
+    display: flex;
+    max-width: 890px;
+    margin: 0 auto;
+    justify-content: center;
+}
+/*-------aside---------*/
+aside{
+    max-width: 308px;
+    background-color: #D8C2A6;  
+    margin-right: 15px;  
+}
+.sidebar__wrapper{
+    margin: 16px 12px;
+}
+.photo{
+    display: flex;
+    position: relative;
+    margin: 0 30px;
+    width: 240px;
+    height: 228px;
+}
+.photo .your{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+img{
+    border: 0;
+    border-radius: 100px;
+    background-color: #C4C4C4;
+    width: 100%;
+}
+h1{
+    margin: 0;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+section h3,.conteiner h3{
+    margin: 22px 0;
+    font-size: 20px;
+    background-color: #323026;
+    color: #FFFFFF;
+    padding: 0 10px;
+}
+/*-------main---------*/
+.main{
+    max-width: 515px;
+    width: 100%;
+}
+.hist{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    background-color: white;
+}
+.conteiner{
+    max-width: 515px;
+    height: 244px;
+    background: #323026;
+}
+.conteiner__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 21px; 
+    max-width: 438px;
+}
+/*------menu---------*/
+nav{
+    display: flex;
+    max-width: 890px;
+    background: #A1B9DE;
+    height: 82px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+nav div{
+    border-right: 2px solid rgba(0, 0, 0, 0.15);
+    flex: 1 1 0;
+    padding: 30px 25px;
+    text-align: center;
+}
+nav div:last-child {
+    border-right: 0;
+}
+/*------login---------*/
+.container__log{
+    width: 484px;
+    background: #D8C2A6;
+    margin: 0 auto;
+}
+.container__log form{
+    margin: 30px auto;
+    padding: 55px 30px 25px 32px; 
+}
+p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+.container__log form div{
+    display: flex;
+    align-items: baseline;
+}
+.container__log form p{
+    width: 86px;
+    height: 32px;
+}
+.input{
+    margin-left: 31px;
+    width: 255;
+    height: 40px;
+}
+.container__log form button {
+    width: 130px;
+    height: 29px;
+    background: #A1B9DE;
+    border: 2px solid #899DBD;
+    margin:182px 307px 0 ;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+/*------edit---------*/
+.wrapper form{
+    display: flex;
+    max-width: 890px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.co {
+    position: relative;
+    border: 1px solid #707070;
+    width: 240px;
+    height: 228px;
+    background: url(../img/3.png)center no-repeat;
+    border: 0;
+}
+.ifile {
+    display: none;
+}
+.in{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    width: 163px;
+    height: 37px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+.univ{
+    width: 233px;
+    height: 220px;
+    text-align: justify;
+    background: rgba(255, 255, 255, 0.87);
+    border: 0;
+}
+.skil{
+    width: 233px;
+    height: 151px;
+    text-align: justify;
+    background: rgba(255, 255, 255, 0.87);
+    border: 0;
+}
+.inf{
+    width: 523px;
+    height: 253px;
+    text-align: justify;
+    background: rgba(255, 255, 255, 0.87);
+    border: 0;
+}
+textarea{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+input{
+    margin: 6px 0;
+    width: 233px;
+    height: 23px;
+    left: 299px;
+    top: 420px;
+    background: rgba(255, 255, 255, 0.87);
+    border: 0;
+}
+.iyn{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    width: 266px;
+    height: 37px;
+    color: #000000;
+}
