@@ -1,17 +1,51 @@
-<html lang="en">
+<?php
+session_start();
+if($_SESSION['user']){
+    (header('Location:  edit.php'));
+}
+?>
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script
+<title></title>
+<meta charset="utf-8">
+<link href="css/style.css" rel="stylesheet">
+<script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
-    <title>Document</title>
+  <script src="js/script.js"></script>
 </head>
 <body>
-<?php	require	"pages/menu.php";	?>
-<?php	require	"pages/main.php";	?>
+
+    <div class="container">
+    <?php
+    require_once	'menu.php';
+    ?>
+        <div class="container__login sub_w">
+        <!-- action="auth.php" -->
+            <form id="formlog"  method="POST">
+                <div class="form__input">
+                    <p>Login</p>
+                    <input class="input"  name="login"  minlength="3" maxlength="25"   type="text" placeholder="Введите логин" required>
+                </div>
+                <div class="form__input">
+                    <p>Pass</p>
+                    <input class="input"  name="password" type="password" placeholder="Введите пароль" minlength="6" maxlength="25" required>
+                </div>
+                <button >Submit</button><br>
+                
+                
+                <?php
+                if($_SESSION['Message']){
+                    echo    ' <p  class="msg">'   .  $_SESSION['Message']    .'</p> ';
+                }
+                unset($_SESSION['Message']);
+                ?>
+                
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
