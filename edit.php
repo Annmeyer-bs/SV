@@ -15,11 +15,9 @@ if(!$_SESSION['user']){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
-  <script src="../js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
     <title>Document</title>
 </head>
 <body>
@@ -39,7 +37,7 @@ if(!$_SESSION['user']){
                     </div>
                     <section class="contact">
                         <h3>Contact</h3>
-                        <input class="input" name="phone" type="tell" placeholder="  +380" value="<?= $up['phone']?>"><br>
+                        <input class="mask-phone input" name="phone" type="tell" placeholder="  +380" value="<?= $up['phone']?>"><br>
                         <input class="input" name="email" type="email" placeholder="  test@gmail.com" value="<?= $up['email']?>"><br>
                         <input class="input" name="adress" type="text" placeholder="  Country, City, District" value="<?= $up['adress']?>"><br>
                         <input class="input" name="links" type="text" placeholder="  linkedin.com/username" value="<?= $up['links']?>"><br>
@@ -79,7 +77,9 @@ if(!$_SESSION['user']){
                     </textarea>
                 </section>
             </div>
-
+            <script>
+                $('.mask-phone').mask('+38 (099) 999-99-99'); 
+            </script>
             <?php
         if($_SESSION['Message']){
             echo    ' <p  class="msg">'   .  $_SESSION['Message']    .'</p> ';
