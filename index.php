@@ -15,6 +15,7 @@ if($_SESSION['user']){
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
+
 </head>
 <body>
 
@@ -31,7 +32,8 @@ if($_SESSION['user']){
                 </div>
                 <div class="form__input">
                     <p>Pass</p>
-                    <input class="input"  name="password" type="password" placeholder="Введите пароль" minlength="6" maxlength="25" required>
+                    <input class="input" id="pass" name="password" type="password" placeholder="Введите пароль" minlength="6" maxlength="25" required>
+                    <span class="icon-pass" id="icon-pass">&#128064;</span>
                 </div>
                 <button >Submit</button><br>
                 
@@ -46,6 +48,6 @@ if($_SESSION['user']){
             </form>
         </div>
     </div>
-
+    <script src="js/eye.js"></script>
 </body>
 </html>
