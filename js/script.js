@@ -36,7 +36,7 @@ function checkRiting() {
  $(document).ready(function(){
   $("#formlog").submit(function(){
    $.ajax({
-     type: "POST",
+     type: "POST",    
      url: "auth.php",
      data: $(this).serialize()
    }).done(function() {

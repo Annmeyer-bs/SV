@@ -253,3 +253,8 @@ input{
     height: 1px;
     transform: rotate(45deg);
 }
+/*------   icon for eye pass   ---------*/
+.icon-pass{
+    cursor: pointer;
+    padding: 0 5px;
+}
